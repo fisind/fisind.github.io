@@ -1,140 +1,535 @@
 <!DOCTYPE html>
-
-<html>
+<html data-wf-domain="www.fisind.com" data-wf-page="5ea79961ac51dc3bacd70110" data-wf-site="5e96473fca1917552f98cd4b">
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>FIS Under Construction</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="all,follow" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-    <!-- Google recaptcha-->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
-    <!-- default stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet" />
-    <link rel="stylesheet" href="css/custom.css" id="theme-stylesheet" />
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png" />
-    <!-- Tweaks for older IEs-->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+    <title>Freed Industrial Services</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script><![endif]-->
+    <script type="text/javascript">
+        ! function(o, c) {
+            var n = c.documentElement,
+                t = " w-mod-";
+            n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+        }(window, document);
+    </script>
+    <link href="./img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="./img/touchicon.png" rel="apple-touch-icon" />
+
+    <style>
+        body,
+        html {
+            overflow-x: hidden;
+        }
+        
+        .swiper-container {
+            overflow: hidden;
+        }
+        
+        .swiper-slide {
+            width: 800;
+        }
+        
+        .swiper-container-3d {
+            -webkit-perspective: 1200px;
+            perspective: 1200px
+        }
+        
+        .swiper-container-3d .swiper-cube-shadow,
+        .swiper-container-3d .swiper-slide,
+        .swiper-container-3d .swiper-slide-shadow-bottom,
+        .swiper-container-3d .swiper-slide-shadow-left,
+        .swiper-container-3d .swiper-slide-shadow-right,
+        .swiper-container-3d .swiper-slide-shadow-top,
+        .swiper-container-3d .swiper-wrapper {
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d
+        }
+        
+        .swiper-container-3d .swiper-slide-shadow-bottom,
+        .swiper-container-3d .swiper-slide-shadow-left,
+        .swiper-container-3d .swiper-slide-shadow-right,
+        .swiper-container-3d .swiper-slide-shadow-top {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10
+        }
+        
+        .swiper-container-3d .swiper-slide-shadow-left {
+            background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
+            background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+            background-image: -o-linear-gradient(right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+            background-image: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+        }
+        
+        .swiper-container-3d .swiper-slide-shadow-right {
+            background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+            background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+            background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+        }
+        
+        .swiper-container-3d .swiper-slide-shadow-top {
+            background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
+            background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+            background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+            background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+        }
+        
+        .swiper-container-3d .swiper-slide-shadow-bottom {
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
+            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+            background-image: -o-linear-gradient(top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+        }
+        
+        .swiper-container-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: 10px;
+            left: 0;
+            width: 100%
+        }
+        
+        .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            white-space: nowrap
+        }
+        
+        .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+            -webkit-transition: .2s left, .2s -webkit-transform;
+            transition: .2s left, .2s -webkit-transform;
+            -o-transition: .2s transform, .2s left;
+            transition: .2s transform, .2s left;
+            transition: .2s transform, .2s left, .2s -webkit-transform
+        }
+        
+        .swiper-container-horizontal.swiper-container-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+            -webkit-transition: .2s right, .2s -webkit-transform;
+            transition: .2s right, .2s -webkit-transform;
+            -o-transition: .2s transform, .2s right;
+            transition: .2s transform, .2s right;
+            transition: .2s transform, .2s right, .2s -webkit-transform
+        }
+    </style>
 </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row min-vh-100">
-            <div class="col-xl-5 col-lg-6 col-md-8 p-5 p-lg-4 mx-auto d-flex align-items-center">
-                <div>
-                    <p><img src="img/logo.svg" style="max-width: 50%; height: auto;"/></p>
-                    <h1 class="text-uppercase"><strong>Under construction.</strong></h1>
-                    <p class="lead">The future home of eastern Pennsylvania's premier electrical contractor for the industrial and utilities market.</p>
-                    <p>
-                        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                    <!-- Form with header -->
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="form-header blue accent-1">
-                                                <h3><i class="fas fa-envelope"></i> Contact us:</h3>
-                                            </div>
-                                            <div class="text-center">
-                                                <a class="btn-floating blue accent-1" style="width:47px; margin:10px; border-radius:50%; box-shadow:0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);" href="tel:4842722998">
-                                                    <i class="fas fa-phone"></i>
-                                                </a>
-                                                <a class="h5" href="tel:4842722998">484.272.2998</a>
-                                            </div>
-
-                                            <!-- Body -->
-                                            <form class="ajaxForm" action="https://formcarry.com/s/DMq7Lq-sn2nA" accept-charset="UTF-8">
-                                                <div class="md-form">
-                                                    <i class="fas fa-user prefix grey-text"></i>
-                                                    <input type="text" id="form34" name="name" class="form-control" required>
-                                                    <label data-error="wrong" data-success="right" for="form34">Your name</label>
-                                                </div>
-                                                <div class="md-form">
-                                                    <i class="fas fa-envelope prefix grey-text"></i>
-                                                    <input type="email" id="form29" name="email" class="form-control" required>
-                                                    <label data-error="wrong" data-success="right" for="form29">Your email</label>
-                                                </div>
-                                                <div class="md-form">
-                                                    <i class="fas fa-pencil-alt prefix grey-text"></i>
-                                                    <textarea type="text" id="form8" name="message" class="md-textarea form-control" rows="3" required></textarea>
-                                                    <label data-error="wrong" data-success="right" for="form8">Your message</label>
-                                                </div>
-                                                <div style="text-align: center;">
-                                                    <div class="g-recaptcha" data-sitekey="6Le8ivMUAAAAAP5soMsmNjjXr0z1LqOfb6Y5a9BY" style="display: inline-block;"></div>
-                                                </div>
-                                                <div class="d-flex justify-content-center">
-                                                    <button class="btn btn-light-blue" type="submit">Send </button>
-                                                </div>
-                                            </form>
-                                        </div>
+<body class="body">
+    <div class="navigation-wrap">
+        <div data-w-id="0b9a641e-6b24-af37-e18a-5cc1142fe778" class="animation-head-div">
+            <div data-collapse="tiny" data-animation="default" data-duration="400" role="banner" class="navigation-2 w-nav">
+                <div class="navigation-full">
+                    <div class="navigation-container-2">
+                        <div class="navigation-left-2">
+                            <a href="/" aria-current="page" class="brand-2 w-nav-brand w--current"><img src="./img/logoname.svg"sizes="(max-width: 991px) 100vw, 141.921875px" alt="" class="nav-logo"/></a>
+                            <nav role="navigation" class="nav-menu-3 w-nav-menu">
+                                <div data-delay="1000" data-hover="1" class="dropdown-2 nav w-dropdown">
+                                    <div class="dropdown-toggle-2 w-dropdown-toggle">
+                                        <div class="drop-arrow-plain w-icon-dropdown-toggle"></div>
+                                        <a href="services.html" class="link-block-3 w-inline-block">
+                                            <div class="navigation-link work individual-move">Our Services</div>
+                                        </a>
                                     </div>
+                                </div><a href="company.html" class="navigation-link w-nav-link">Company</a><a href="/index.html#contact" class="navigation-link w-nav-link">Contact</a></nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rule-div-line nav test-01">
+                <div data-w-id="5ce2b45d-8e19-4ebe-6b4c-3df0b07006dc" class="rule home"></div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-nav-wrap">
+        <div data-w-id="2bf98cb8-b0a9-28d4-3e22-d31046e5546c" class="mobile-anim-div">
+            <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" role="banner" class="navbar mobile-nav w-nav">
+                <div class="nav-container w-container">
+                    <a href="/" aria-current="page" class="brand w-nav-brand w--current"> <img src="./img/logoname_mobile.svg" sizes="(max-width: 991px) 120px, 100vw" alt="" class="brand-logo" /></a>
+                    <nav role="navigation" class="nav-menu w-nav-menu"><a href="services.html" class="navlink mobile first w-nav-link">Our Services</a><a href="company.html" class="navlink mobile w-nav-link">Company</a><a href="/index.html#contact" class="navlink mobile w-nav-link">Contact</a></nav>
+                    <div class="menu-button w-nav-button">
+                        <div class="icon-5 w-icon-nav-menu"></div>
+                    </div>
+                </div>
+                <div class="rule-div-line nav first">
+                    <div class="rule"></div>
+                </div>
+            </div>
+            <div data-w-id="578bf01e-0d1a-4643-2afe-f0481099b5e7" class="rule-div-line nav mobile-line">
+                <div class="rule"></div>
+            </div>
+        </div>
+    </div>
+    <div data-w-id="9d4d41f3-50a8-17b7-57e4-92b1eca7b7f4" class="work-nav">
+        <div class="div-block">
+            <div class="work-nav-div">
+                <a href="#" class="work-nav-link work w-inline-block">
+                    <div class="work-nav-item">
+                        <div class="work-nav-text">Our Services</div>
+                    </div>
+                </a>
+                <a id="w-node-c5f92cd23722-acd70110" href="services.html" class="work-nav-link w-inline-block">
+                    <div class="work-nav-item">
+                        <div class="work-nav-text product">Industrial/Utilities</div>
+                        <div class="work-nav-text product description">NECA & IBEW accredited</div>
+                    </div>
+                </a>
+                <a id="w-node-92b1eca7b801-acd70110" href="services.html#telecom" class="work-nav-link w-inline-block">
+                    <div class="work-nav-item">
+                        <div class="work-nav-text product">Telecommunications</div>
+                        <div class="work-nav-text product description">Expand your capacity</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section home-header new-home">
+        <div class="home-header-div heder new">
+            <div id="w-node-14e0ff3c4c6e-acd70110" class="place-holder-div"></div>
+            <h1 id="w-node-2bce31bb7bdd-acd70110" class="h1 header"><strong>Powering <br/>Eastern <br/>Pennsylvania's <br/>Growth.</strong></h1>
+        </div>
+        <div data-w-id="9aa73693-e4ae-18bd-201d-dee1a8782e35" class="arrow"><img src="./img/Down_Arrow.svg" alt="" class="image-20" /></div>
+    </div>
+    <div class="section home-video">
+        <div class="video-main-div">
+            <div class="h3 video"></div>
+            <div class="h3 video watch text-hide"></div>
+        </div>
+        <div class="image-block home">
+            <div class="hero-video-div home"></div>
+        </div>
+    </div>
+    <div class="section quote" id="about">
+        <div class="quote-div gallery _45" style="padding-bottom: 120px;">
+            <h1 class="h1">We’re proud <br/>of our work</h1>
+            <h1 class="h2">Freed Industrial Services (FIS, LLC) is an electrical contractor specializing in industrial, commercial, utility, wireless, and telecommunication construction. We are a 24-hour per day, 7-day per week operation with the ability to perform
+                any size job.
+                <br/>
+                <br/>FIS is a 100% women-owned, union contractor affiliated with both the NECA and IBEW.</h1>
+            <div class="place-holder-div"></div>
+        </div>
+    </div>
+    <div data-w-id="d88319da-fac6-663c-a800-2fabea409866" class="carasol home">
+        <div class="swiper-container">
+            <div class="div-block-8"></div>
+            <div class="swiper-button-next">
+                <div class="pagination-center"><img src="./img/Arrow_Forward.svg" alt="" class="pagination-gallery" /></div>
+            </div>
+            <div class="swiper-button-prev">
+                <div class="pagination-center"><img src="./img/Arrow_Back.svg" alt="" class="pagination-gallery" /></div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide big">
+                    <div class="big-container">
+                        <div class="swiper-slide bigone">
+                            <div class="picture t-1 big"><img src="./img/fis3.jpg" srcset="./img/fis3-500.jpeg 500w, ./img/fis3-800.jpeg 800w, ./img/fis3.jpg 950w" sizes="(max-width: 479px) 100vw, 453px" alt="" /></div>
+                            <div class="carrasol-pager first">
+                                <div class="pager-div">
+                                    <div class="pager-main">Allentown, PA</div>
+                                    <div class="pager-divider"></div>
+                                    <div class="pager-info">1 of 4</div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <a href="" class="btn btn-outline-dark" data-toggle="modal" data-target="#modalContactForm">Contact Us</a>
+                        <div class="swiper-slide bigone">
+                            <div class="picture t-1 big"><img src="./img/fis2.jpg" srcset="./img/fis2-500.jpeg 500w, ./img/fis2-800.jpeg 800w, ./img/fis2.jpg 950w" sizes="(max-width: 479px) 100vw, 453px" alt="" /></div>
+                            <div class="carrasol-pager">
+                                <div class="pager-div">
+                                    <div class="pager-main">Telecom</div>
+                                    <div class="pager-divider"></div>
+                                    <div class="pager-info">2 of 4</div>
+                                </div>
+                            </div>
                         </div>
-                    </p>
-                    <p class="credit">
-                        &copy;
-                        <span id="copyright">
+                        <div class="swiper-slide bigone">
+                            <div class="picture t-1 big"><img src="./img/fis1.jpg" srcset="./img/fis1-500.jpeg 500w, ./img/fis1-800.jpeg 800w, ./img/fis1.jpg 950w" sizes="(max-width: 479px) 100vw, 453px" alt="" /></div>
+                            <div class="carrasol-pager">
+                                <div class="pager-div">
+                                    <div class="pager-main">Substation</div>
+                                    <div class="pager-divider"></div>
+                                    <div class="pager-info">3 of 4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide big">
+                    <div class="big-container">
+                        <div class="swiper-slide bigone">
+                            <div class="picture t-1 big"><img src="./img/fis4.jpg" srcset="./img/fis4-500.jpeg 500w, ./img/fis4-800.jpeg 800w, ./img/fis4.jpg 950w" sizes="(max-width: 479px) 100vw, 453px" alt="" /></div>
+                            <div class="carrasol-pager first">
+                                <div class="pager-div">
+                                    <div class="pager-main">Switchgear</div>
+                                    <div class="pager-divider"></div>
+                                    <div class="pager-info">4 of 4</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar">
+                <div class="swiper-scrollbar-drag"></div>
+            </div>
+        </div>
+    </div>
+    <div class="carasol mobile">
+        <div class="swiper-container-mobile">
+            <div class="swiper-wrapper mobile">
+                <div class="swiper-slide">
+                    <div class="picture t-1"><img src="./img/fis3.jpg" srcset="./img/fis3-500.jpeg 500w, ./img/fis3-800.jpeg 800w, ./img/fis3.jpg 950w" sizes="(max-width: 479px) 286px, 100vw" alt="" /></div>
+                    <div class="carrasol-pager">
+                        <div class="pager-div">
+                            <div class="pager-main">Allentown, PA</div>
+                            <div class="pager-divider"></div>
+                            <div class="pager-info">1 of 4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture t-1"><img src="./img/fis2.jpg" srcset="./img/fis2-500.jpeg 500w, ./img/fis2-800.jpeg 800w, ./img/fis2.jpg 950w" sizes="(max-width: 479px) 286px, 100vw" alt="" /></div>
+                    <div class="carrasol-pager">
+                        <div class="pager-div">
+                            <div class="pager-main">Telecom</div>
+                            <div class="pager-divider"></div>
+                            <div class="pager-info">2 of 4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture t-1"><img src="./img/fis1.jpg" srcset="./img/fis1-500.jpeg 500w, ./img/fis1-800.jpeg 800w, ./img/fis1.jpg 950w" sizes="(max-width: 479px) 286px, 100vw" alt="" /></div>
+                    <div class="carrasol-pager">
+                        <div class="pager-div">
+                            <div class="pager-main">Substation</div>
+                            <div class="pager-divider"></div>
+                            <div class="pager-info">3 of 4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="picture t-1"><img src="./img/fis4.jpg" srcset="./img/fis4-500.jpeg 500w, ./img/fis4-800.jpeg 800w, ./img/fis4.jpg 950w" sizes="(max-width: 479px) 286px, 100vw" alt="" /></div>
+                    <div class="carrasol-pager">
+                        <div class="pager-div">
+                            <div class="pager-main">Switchgear</div>
+                            <div class="pager-divider"></div>
+                            <div class="pager-info">4 of 4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-scrollbar">
+                <div class="swiper-scrollbar-drag"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section form">
+        <div class="section-spacing">
+            <div class="rule-div-line partern">
+                <div class="rule"></div>
+            </div>
+        </div>
+        <div class="get-in-touch-div _45 home " id="contact">
+            <h1 class="h1">Let’s talk</h1>
+            <div class="w-form">
+                <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" accept-charset="UTF-8">
+                    <div class="div-block-3">
+                        <input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name 2" placeholder="Name" id="name-2" required="" />
+                        <input type="text" class="text-field right w-input" maxlength="256" name="company" data-name="Company 2" placeholder="Company" id="company-2" />
+                    </div>
+                    <div class="div-block-3">
+                        <input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email 2" placeholder="Email" id="email-2" required="" />
+                        <input type="text" class="text-field right w-input" maxlength="256" name="phone" data-name="Phone 2" placeholder="Phone" id="phone-2" required="" />
+                    </div>
+                    <textarea placeholder="Message" maxlength="5000" id="Home-Message" name="message" data-name="Home Message" class="text-field large w-input"></textarea>
+                    <div class="button-div-main">
+                        <input type="submit" value="Submit " data-wait="Please wait..." class="submit-button w-button" />
+                        <div class="arrow-svg-div-button"><img src="./img/Arrow.svg" alt="" class="arrow-button" /></div>
+                    </div>
+                </form>
+                <div class="w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+            </div>
+            <h1 class="h2 lets-talk">We would love to hear from you. Whether you are passionate about what we do, or you feel our products can help you in your next mission. Let us know and we will be honored to hear from you.<br/></h1>
+            <div class="place-holder-div"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="section-spacing fotter">
+            <div class="rule-div-line partern">
+                <div class="rule"></div>
+            </div>
+        </div>
+        <div class="footer-div-main">
+            <div id="w-node-4938e7af7a62-8a72557c" class="footer-link first"><img src="./img/logo_white.svg" alt="" class="image-2" />
+                <div class="footer-text first">Bethlehem, PA
+                    <br/>
+                    <br/>‍</div>
+            </div>
+            <div id="w-node-8b938a72558e-8a72557c" class="footer-link"><img src="./img/logo_white.svg" alt="" class="image-2 hide" />
+                <a href="" class="navlink footer w-inline-block">
+                    <div class="text-block dark"></div>
+                </a>
+                <a href="" class="navlink footer single w-inline-block">
+                    <div class="text-block"></div>
+                </a>
+                <a href="" class="navlink footer single w-inline-block">
+                    <div class="text-block"></div>
+                </a>
+            </div>
+            <div id="w-node-8b938a72559b-8a72557c" class="footer-link"><img src="./img/logo_white.svg" alt="" class="image-2 hide" />
+                <a href="/index.html" class="navlink footer w-inline-block">
+                    <div class="text-block dark">Home</div>
+                </a>
+                <a href="index.html#about" class="navlink footer single w-inline-block">
+                    <div class="text-block">About</div>
+                </a>
+                <a href="" class="navlink footer single w-inline-block">
+                    <div class="text-block"></div>
+                </a>
+            </div>
+            <div id="w-node-8b938a7255a8-8a72557c" class="footer-link"><img src="./img/logo_white.svg" alt="" class="image-2 hide" />
+                <a href="services.html" class="navlink footer w-inline-block">
+                    <div class="text-block dark">Our Services</div>
+                </a>
+                <a href="services.html" class="navlink footer single w-inline-block">
+                    <div class="text-block">Industrial/Utilities</div>
+                </a>
+                <a href="services.html#telecom" class="navlink footer single w-inline-block">
+                    <div class="text-block">Telecommunications</div>
+                </a>
+            </div>
+            <div id="w-node-8b938a7255b2-8a72557c" class="footer-link"><img src="./img/logo_white.svg" alt="" class="image-2 hide" />
+                <a href="company.html" class="navlink footer w-inline-block">
+                    <div class="text-block dark">Company</div>
+                </a>
+                <a href="company.html#mission" class="navlink footer single w-inline-block">
+                    <div class="text-block">Mission</div>
+                </a>
+                <a href="company.html#values" class="navlink footer single w-inline-block">
+                    <div class="text-block">Values</div>
+                </a>
+                <a href="company.html" class="navlink footer single w-inline-block"></a>
+            </div>
+            <div id="w-node-8b938a7255c1-8a72557c" class="footer-link last"><img src="./img/logo_white.svg" alt="" class="image-2 hide" />
+                <a href="mailto:info@fisind.com" class="navlink footer w-inline-block">
+                    <div class="text-block dark">Contact</div>
+                </a>
+                <a href="index.html#contact" class="navlink footer single w-inline-block">
+                    <div class="text-block">General Inquiries</div>
+                </a>
+                <a href="tel:4842722998" class="navlink footer single w-inline-block">
+                    <div class="text-block">484.272.2998</div>
+                </a>
+            </div>
+        </div>
+        <div class="footer-div-main line-switch">
+            <div id="w-node-bc534b4520f2-8a72557c" class="footer-link first">
+                <div class="div-block-9"></div>
+            </div>
+            <div id="w-node-bc534b452100-8a72557c" class="footer-link">
+                <div class="div-block-9"></div>
+            </div>
+            <div id="w-node-bc534b45210e-8a72557c" class="footer-link">
+                <div class="div-block-9"></div>
+            </div>
+            <div id="w-node-bc534b45211c-8a72557c" class="footer-link">
+                <div class="div-block-9"></div>
+            </div>
+            <div id="w-node-bc534b452127-8a72557c" class="footer-link">
+                <div class="legal-footer"><a href="terms.html" target="_blank" class="link-20">Terms of Use</a> <span>— </span><a href="privacy.html" target="_blank" class="link-21">Privacy Policy</a></div>
+            </div>
+            <div id="w-node-bc534b45213d-8a72557c" class="footer-link last">
+                <div class="legal-footer last">©
+                    <span id="copyright">
                         <script>
                            document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
                         </script>
-                     </span> Freed Industrial Services
-                    </p>
+                    </span> FIS, LLC
                 </div>
             </div>
-            <div style="background-image: url('img/pexels-photo-40120.jpg');" class="col-xl-6 col-lg-5 col-md-4 intro-right"></div>
         </div>
     </div>
-    <!-- JavaScript files-->
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
-    <!--Custom scripts-->
+    <div class="footer-bg"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+    <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.min.js" integrity="sha256-TBQfNo2hFSrySAh5TFAbZb5m8VUOGwsvbBBXj7lF6vI=" crossorigin="anonymous"></script><![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.8/js/swiper.min.js" integrity="sha256-MbmmRTDKmXtrzBXtkzpnesuGWf09dcb1RzZle79pwY4=" crossorigin="anonymous"></script>
+
     <script>
-        $(function(){
-               $(".ajaxForm").submit(function(e){
-                   e.preventDefault();
-                   var href = $(this).attr("action");
-                   $.ajax({
-                       type: "POST",
-                       dataType: "json",
-                       url: href,
-                       data: $(this).serialize(),
-                       success: function(response){
-                           if(response.status == "success"){
-                               $(".ajaxForm")[0].reset();
-                               alert("We received your submission, thank you!");
-                               location.reload();
-                           }else{
-                               alert("An error occured: " + response.message);
-                           }
-                       }
-                   });
-               });
-           });
+        var swiper = new Swiper(".swiper-container", {
+            speed: 1500,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            freeMode: true,
+            freeModeMomentumRatio: 0.5,
+            touchRatio: 0,
+            freeModeMomentumVelocityRatio: 1,
+            grabCursor: true,
+            centeredSlides: false,
+            slidesPerView: "auto",
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+                draggable: true
+            },
+        });
     </script>
+
+    <script>
+        var swiper = new Swiper(".swiper-container-mobile", {
+            speed: 1500,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            freeMode: true,
+            freeModeMomentumRatio: 0.5,
+            touchRatio: 1,
+            freeModeMomentumVelocityRatio: 1,
+            grabCursor: true,
+            centeredSlides: false,
+            slidesPerView: "auto",
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+                draggable: true
+            },
+        });
+    </script>
+
+    <script src="https://carrier.formcarry.com/js/v1.js"></script>
+    <script>
+        formcarry({
+            form: "DMq7Lq-sn2nA",
+            // id or the class name of the form element, only form element allowed
+            // works with css selectors
+            // # <= for id
+            // . <= for class
+            element: "#wf-form-Contact-Form",
+            extraData: {
+              // add whatever you want
+              screenSize: `${window.screen.width}x${window.screen.height}`,
+              language: window.navigator.language,
+            },
+          });
+    </script>
+
 </body>
 
 </html>
